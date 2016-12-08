@@ -196,10 +196,10 @@
         
           <span itemprop="articleBody"><p>苹果官方宣布2017年开始所有AppStore上架的APP都要启用SSL/TLS协议，于是把我们的API服务改为HTTPS，问题来了，用户在输入域名的时候一般不会输”http”或者”https”，需要域名拥有者通过302跳转或者加”Strict-Transport-Security ” 头 通知浏览器强制使用https访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了HTTPS，发现用浏览器访问服务地址都自动给转为了https 前缀… 万事不决问Google，找到Chrome，Firefox的解决之法，我们需要清除掉HSTS在浏览器的本地缓存，这样就不会再自动转换为HTTPS。</p>
 <ol>
-<li>Chrome<br> Chrome不愧是工程师的最爱，自带Develop功能，键入「<a href="chrome://net-internals/#hsts" target="_blank" rel="external">chrome://net-internals/#hsts</a>」在”Delete domain” 那里删掉 你想要的域名即可<br>  <a href="http://7xrki6.com1.z0.glb.clouddn.com/chrome.png" title="截图" target="_blank" rel="external"></a></li>
+<li>Chrome<br> Chrome不愧是工程师的最爱，自带Develop功能，键入「<a href="chrome://net-internals/#hsts" target="_blank" rel="external">chrome://net-internals/#hsts</a>」在”Delete domain” 那里删掉你想要的域名即可。<br> <img src="http://7xrki6.com1.z0.glb.clouddn.com/chrome.png" alt="截图"></li>
 </ol>
 <ol>
-<li>Firefox<br> 火狐家没有提供如Chrome般那么好用的工具，需要在管理历史记录里输入你想要删除的站点，然后右键删除该站点信息即可。<a href="http://7xrki6.com1.z0.glb.clouddn.com/firefox.png" title="截图" target="_blank" rel="external"></a></li>
+<li>Firefox<br> 火狐家没有提供如Chrome般那么好用的工具，需要在管理历史记录里输入你想要删除的站点，然后右键删除该站点信息即可。<br> <img src="http://7xrki6.com1.z0.glb.clouddn.com/firefox.png" alt="截图"></li>
 </ol>
 </span>
         
@@ -783,7 +783,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

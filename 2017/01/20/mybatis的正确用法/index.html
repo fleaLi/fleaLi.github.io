@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="Groovy,JVM,Java," />
+  <meta name="keywords" content="Hexo,next" />
 
 
 
@@ -37,16 +37,24 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="现在的工作中由于需要经常读写文件，处理文本内容，Groovy 这个语言用的频率比较多，渐渐感觉它的强大，方便之处。由于是动态语言加上闭包优势，能让你用很少的代码干很多的事，真的是一件很幸福的事。比起Java冗长的语法，用Groovy处理一些日常的文件操作，字符串操作实在是一件很幸福的事。打算用Groovy来写些DSL。DSL这个东西知道很久了，但也只是停留在知道上面，现在有机会自己实现一些，很期待">
+<meta name="description" content="title: mybatis的正确用法date: 2017-01-20 11:33:58tags:
+-mybatis
+之前一直觉得写mybatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我…原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Groovy的威力">
-<meta property="og:url" content="blog.fleais.me/2016/08/02/Groovy的威力/index.html">
+<meta property="og:title" content="Flea's Note">
+<meta property="og:url" content="blog.fleais.me/2017/01/20/mybatis的正确用法/index.html">
 <meta property="og:site_name" content="Flea's Note">
-<meta property="og:description" content="现在的工作中由于需要经常读写文件，处理文本内容，Groovy 这个语言用的频率比较多，渐渐感觉它的强大，方便之处。由于是动态语言加上闭包优势，能让你用很少的代码干很多的事，真的是一件很幸福的事。比起Java冗长的语法，用Groovy处理一些日常的文件操作，字符串操作实在是一件很幸福的事。打算用Groovy来写些DSL。DSL这个东西知道很久了，但也只是停留在知道上面，现在有机会自己实现一些，很期待">
-<meta property="og:updated_time" content="2016-12-09T11:32:27.000Z">
+<meta property="og:description" content="title: mybatis的正确用法date: 2017-01-20 11:33:58tags:
+-mybatis
+之前一直觉得写mybatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我…原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优">
+<meta property="og:image" content="http://7xrki6.com1.z0.glb.clouddn.com/mybatis.png">
+<meta property="og:updated_time" content="2017-01-20T03:50:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Groovy的威力">
-<meta name="twitter:description" content="现在的工作中由于需要经常读写文件，处理文本内容，Groovy 这个语言用的频率比较多，渐渐感觉它的强大，方便之处。由于是动态语言加上闭包优势，能让你用很少的代码干很多的事，真的是一件很幸福的事。比起Java冗长的语法，用Groovy处理一些日常的文件操作，字符串操作实在是一件很幸福的事。打算用Groovy来写些DSL。DSL这个东西知道很久了，但也只是停留在知道上面，现在有机会自己实现一些，很期待">
+<meta name="twitter:title" content="Flea's Note">
+<meta name="twitter:description" content="title: mybatis的正确用法date: 2017-01-20 11:33:58tags:
+-mybatis
+之前一直觉得写mybatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我…原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优">
+<meta name="twitter:image" content="http://7xrki6.com1.z0.glb.clouddn.com/mybatis.png">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -56,7 +64,7 @@
   };
 </script>
 
-  <title> Groovy的威力 | Flea's Note </title>
+  <title>  | Flea's Note </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -155,7 +163,7 @@
           
           
             
-              Groovy的威力
+              
             
           
         </h1>
@@ -164,8 +172,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-08-02T14:45:27+08:00" content="2016-08-02">
-            2016-08-02
+          <time itemprop="dateCreated" datetime="2017-01-20T00:00:00+08:00" content="2017-01-20">
+            2017-01-20
           </time>
         </span>
 
@@ -175,8 +183,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/08/02/Groovy的威力/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/02/Groovy的威力/" itemprop="commentsCount"></span>
+              <a href="/2017/01/20/mybatis的正确用法/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/20/mybatis的正确用法/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -190,35 +198,25 @@
       
 
       
-        <span itemprop="articleBody"><p>现在的工作中由于需要经常读写文件，处理文本内容，Groovy 这个语言用的频率比较多，渐渐感觉它的强大，方便之处。由于是动态语言加上闭包优势，能让你用很少的代码干很多的事，真的是一件很幸福的事。比起Java冗长的语法，用Groovy处理一些日常的文件操作，字符串操作实在是一件很幸福的事。<br>打算用Groovy来写些DSL。DSL这个东西知道很久了，但也只是停留在知道上面，现在有机会自己实现一些，很期待。</p>
+        <span itemprop="articleBody"><p>title: mybatis的正确用法<br>date: 2017-01-20 11:33:58<br>tags:</p>
+<p>-mybatis</p>
+<p>之前一直觉得写mybatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我…原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：<br><img src="http://7xrki6.com1.z0.glb.clouddn.com/mybatis.png" alt="截图"><br>但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说，都是值得的。</p>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Groovy/" rel="tag">#Groovy</a>
-          
-            <a href="/tags/JVM/" rel="tag">#JVM</a>
-          
-            <a href="/tags/Java/" rel="tag">#Java</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/08/HSTS副作用/" rel="prev">HSTS副作用</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/26/创新Live2使用体验/" rel="next">创新Live2使用体验</a>
+              <a href="/2016/12/08/HSTS副作用/" rel="next">HSTS副作用</a>
             
           </div>
         </div>
@@ -243,8 +241,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2016/08/02/Groovy的威力/"
-                   data-title="Groovy的威力" data-url="blog.fleais.me/2016/08/02/Groovy的威力/">
+              <div class="ds-thread" data-thread-key="2017/01/20/mybatis的正确用法/"
+                   data-title="" data-url="blog.fleais.me/2017/01/20/mybatis的正确用法/">
               </div>
             
           </div>

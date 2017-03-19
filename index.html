@@ -156,8 +156,8 @@
           
           
             
-              <a class="post-title-link" href="/2017/03/19/fatjar遇到的问题/" itemprop="url">
-                未命名
+              <a class="post-title-link" href="/2017/03/19/maven打单体jar遇到的问题/" itemprop="url">
+                maven打单体jar遇到的问题
               </a>
             
           
@@ -167,7 +167,7 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2017-03-19T22:30:56+08:00" content="2017-03-19">
+          <time itemprop="dateCreated" datetime="2017-03-19T22:33:00+08:00" content="2017-03-19">
             2017-03-19
           </time>
         </span>
@@ -178,8 +178,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2017/03/19/fatjar遇到的问题/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/19/fatjar遇到的问题/" itemprop="commentsCount"></span>
+              <a href="/2017/03/19/maven打单体jar遇到的问题/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/19/maven打单体jar遇到的问题/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -194,8 +194,7 @@
 
       
         
-          <span itemprop="articleBody"><p>title: fatjar遇到的问题<br>date: 2017-03-19 20:44:46</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags: "></a>tags: </h2><p>尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [<a href="http://www.springframework.org/schema/tx]”。" target="_blank" rel="external">http://www.springframework.org/schema/tx]”。</a><br><img src="http://7xrki6.com1.z0.glb.clouddn.com/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png" alt="截图"><br>一开始以为是 spring-tx jar 包有版本冲突。在pom文件里显示声明了版本，还是出现这个错误。又查了下，原来是因为把Spring里各模块里META-INF下的scheme文件，handler文件覆盖了。换用maven-shade-plugin 配置transformer属性即可。</p>
+          <span itemprop="articleBody"><p>尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [<a href="http://www.springframework.org/schema/tx]”。" target="_blank" rel="external">http://www.springframework.org/schema/tx]”。</a><br><img src="http://7xrki6.com1.z0.glb.clouddn.com/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png" alt="截图"><br>一开始以为是 spring-tx jar 包有版本冲突。在pom文件里显示声明了版本，还是出现这个错误。又查了下，原来是因为把Spring里各模块里META-INF下的scheme文件，handler文件覆盖了。换用maven-shade-plugin 配置transformer属性即可。</p>
 <p><img src="http://7xrki6.com1.z0.glb.clouddn.com/2.png" alt="截图"></p>
 </span>
         

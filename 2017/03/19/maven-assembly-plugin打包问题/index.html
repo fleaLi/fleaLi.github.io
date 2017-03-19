@@ -37,21 +37,21 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="title: maven-assembly-plugin打包问题date: 2017-03-19 20:44:46
-tags: [maven-assembly-plugin]尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandle">
+<meta name="description" content="title:  maven-assembly-plugin打包问题date:  2017-03-19 20:44:46
+tags:  maven-assembly-plugin尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flea's Note">
 <meta property="og:url" content="blog.fleais.me/2017/03/19/maven-assembly-plugin打包问题/index.html">
 <meta property="og:site_name" content="Flea's Note">
-<meta property="og:description" content="title: maven-assembly-plugin打包问题date: 2017-03-19 20:44:46
-tags: [maven-assembly-plugin]尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandle">
+<meta property="og:description" content="title:  maven-assembly-plugin打包问题date:  2017-03-19 20:44:46
+tags:  maven-assembly-plugin尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandl">
 <meta property="og:image" content="http://7xrki6.com1.z0.glb.clouddn.com/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png">
 <meta property="og:image" content="http://7xrki6.com1.z0.glb.clouddn.com/2.png">
-<meta property="og:updated_time" content="2017-03-19T13:13:08.000Z">
+<meta property="og:updated_time" content="2017-03-19T13:15:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flea's Note">
-<meta name="twitter:description" content="title: maven-assembly-plugin打包问题date: 2017-03-19 20:44:46
-tags: [maven-assembly-plugin]尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandle">
+<meta name="twitter:description" content="title:  maven-assembly-plugin打包问题date:  2017-03-19 20:44:46
+tags:  maven-assembly-plugin尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandl">
 <meta name="twitter:image" content="http://7xrki6.com1.z0.glb.clouddn.com/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png">
 
 
@@ -196,8 +196,8 @@ tags: [maven-assembly-plugin]尝试用maven assembly plugin 把公司的API项�
       
 
       
-        <span itemprop="articleBody"><p>title: maven-assembly-plugin打包问题<br>date: 2017-03-19 20:44:46</p>
-<h2 id="tags-maven-assembly-plugin"><a href="#tags-maven-assembly-plugin" class="headerlink" title="tags: [maven-assembly-plugin]"></a>tags: [maven-assembly-plugin]</h2><p>尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [<a href="http://www.springframework.org/schema/tx]”。" target="_blank" rel="external">http://www.springframework.org/schema/tx]”。</a><br><img src="http://7xrki6.com1.z0.glb.clouddn.com/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png" alt="截图"><br>一开始以为是 spring-tx jar 包有版本冲突。在pom文件里显示声明了版本，还是出现这个错误。又查了下，原来是因为把Spring里各模块里META-INF下的scheme文件，handler文件覆盖了。换用maven-shade-plugin 配置transformer属性即可。</p>
+        <span itemprop="articleBody"><p>title:  maven-assembly-plugin打包问题<br>date:  2017-03-19 20:44:46</p>
+<h2 id="tags-maven-assembly-plugin"><a href="#tags-maven-assembly-plugin" class="headerlink" title="tags:  maven-assembly-plugin"></a>tags:  <a href="">maven-assembly-plugin</a></h2><p>尝试用maven assembly plugin 把公司的API项目生成fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [<a href="http://www.springframework.org/schema/tx]”。" target="_blank" rel="external">http://www.springframework.org/schema/tx]”。</a><br><img src="http://7xrki6.com1.z0.glb.clouddn.com/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png" alt="截图"><br>一开始以为是 spring-tx jar 包有版本冲突。在pom文件里显示声明了版本，还是出现这个错误。又查了下，原来是因为把Spring里各模块里META-INF下的scheme文件，handler文件覆盖了。换用maven-shade-plugin 配置transformer属性即可。</p>
 <p><img src="http://7xrki6.com1.z0.glb.clouddn.com/2.png" alt="截图"></p>
 </span>
       
@@ -332,7 +332,7 @@ tags: [maven-assembly-plugin]尝试用maven assembly plugin 把公司的API项�
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-maven-assembly-plugin"><span class="nav-number">1.</span> <span class="nav-text">tags: [maven-assembly-plugin]</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-maven-assembly-plugin"><span class="nav-number">1.</span> <span class="nav-text">tags:  maven-assembly-plugin</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

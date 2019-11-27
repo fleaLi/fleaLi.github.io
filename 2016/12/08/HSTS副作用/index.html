@@ -1,55 +1,57 @@
 <!doctype html>
 <html class="theme-next use-motion theme-next-mist">
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="阅读，思考，交流" />
-
-
-
-  <meta name="keywords" content="Chrome,Firefox,HTTPS,SSL/TLS," />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5">
 
 
-<meta name="description" content="苹果官方宣布2017年开始所有AppStore上架的APP都要启用SSL/TLS协议，于是把我们的API服务改为HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过302跳转或者加「Strict-Transport-Security」头通知浏览器强制使用https访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了HTTPS，">
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1">
+
+
+    <meta name="description" content="阅读，思考，交流">
+
+
+
+  <meta name="keywords" content="Chrome,Firefox,HTTPS,SSL/TLS,">
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1">
+
+
+<meta name="description" content="苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过 302 跳转或者加「Strict-Transport-Security」头通知浏览器强制使用 https 访问，基于安全性考虑，我们用了加请求头的方式，后来由于开">
+<meta name="keywords" content="Chrome,Firefox,HTTPS,SSL&#x2F;TLS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HSTS副作用">
+<meta property="og:title" content="HSTS 副作用">
 <meta property="og:url" content="blog.fleais.me/2016/12/08/HSTS副作用/index.html">
-<meta property="og:site_name" content="Flea's Note">
-<meta property="og:description" content="苹果官方宣布2017年开始所有AppStore上架的APP都要启用SSL/TLS协议，于是把我们的API服务改为HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过302跳转或者加「Strict-Transport-Security」头通知浏览器强制使用https访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了HTTPS，">
-<meta property="og:image" content="http://7xrki6.com1.z0.glb.clouddn.com/chrome.png">
-<meta property="og:image" content="http://7xrki6.com1.z0.glb.clouddn.com/firefox.png">
-<meta property="og:updated_time" content="2016-12-08T10:05:03.000Z">
+<meta property="og:site_name" content="Flea&#39;s Note">
+<meta property="og:description" content="苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过 302 跳转或者加「Strict-Transport-Security」头通知浏览器强制使用 https 访问，基于安全性考虑，我们用了加请求头的方式，后来由于开">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/chrome.png">
+<meta property="og:image" content="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/firefox.png">
+<meta property="og:updated_time" content="2019-11-27T04:34:52.045Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HSTS副作用">
-<meta name="twitter:description" content="苹果官方宣布2017年开始所有AppStore上架的APP都要启用SSL/TLS协议，于是把我们的API服务改为HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过302跳转或者加「Strict-Transport-Security」头通知浏览器强制使用https访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了HTTPS，">
-<meta name="twitter:image" content="http://7xrki6.com1.z0.glb.clouddn.com/chrome.png">
+<meta name="twitter:title" content="HSTS 副作用">
+<meta name="twitter:description" content="苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过 302 跳转或者加「Strict-Transport-Security」头通知浏览器强制使用 https 访问，基于安全性考虑，我们用了加请求头的方式，后来由于开">
+<meta name="twitter:image" content="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/chrome.png">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -59,7 +61,7 @@
   };
 </script>
 
-  <title> HSTS副作用 | Flea's Note </title>
+  <title> HSTS 副作用 | Flea's Note </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -109,7 +111,7 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            <i class="menu-item-icon icon-next-home"></i> <br>
             首页
           </a>
         </li>
@@ -117,7 +119,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            <i class="menu-item-icon icon-next-archives"></i> <br>
             归档
           </a>
         </li>
@@ -125,7 +127,7 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
+            <i class="menu-item-icon icon-next-tags"></i> <br>
             标签
           </a>
         </li>
@@ -158,7 +160,7 @@
           
           
             
-              HSTS副作用
+              HSTS 副作用
             
           
         </h1>
@@ -193,12 +195,12 @@
       
 
       
-        <span itemprop="articleBody"><p>苹果官方宣布2017年开始所有AppStore上架的APP都要启用SSL/TLS协议，于是把我们的API服务改为HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过302跳转或者加「Strict-Transport-Security」头通知浏览器强制使用https访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了HTTPS，发现用浏览器访问服务地址都自动给转为了https 前缀。。。 万事不决问Google，找到Chrome，Firefox的解决之法，我们需要清除掉HSTS在浏览器的本地缓存，这样就不会再自动转换为HTTPS。</p>
+        <span itemprop="articleBody"><p>苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过 302 跳转或者加「Strict-Transport-Security」头通知浏览器强制使用 https 访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了 HTTPS，发现用浏览器访问服务地址都自动给转为了 https 前缀。。。 万事不决问 Google，找到 Chrome，Firefox 的解决之法，我们需要清除掉 HSTS 在浏览器的本地缓存，这样就不会再自动转换为 HTTPS。</p>
 <ul>
-<li>Chrome<br>  Chrome不愧是工程师的最爱，自带Develop功能，键入「<a href="chrome://net-internals/#hsts" target="_blank" rel="external">chrome://net-internals/#hsts</a>」在”Delete domain”那里删掉你想要的域名即可。<br>  <img src="http://7xrki6.com1.z0.glb.clouddn.com/chrome.png" alt="截图"></li>
+<li>Chrome<br>Chrome 不愧是工程师的最爱，自带 Develop 功能，键入「<a href="chrome://net-internals/#hsts" target="_blank" rel="noopener">chrome://net-internals/#hsts</a>」在”Delete domain”那里删掉你想要的域名即可。<br><img src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/chrome.png" alt="截图"></li>
 </ul>
 <ul>
-<li>Firefox<br>  火狐家没有提供如Chrome般那么好用的工具，需要在管理历史记录里输入你想要删除的站点，然后右键删除该站点信息即可。<br>  <img src="http://7xrki6.com1.z0.glb.clouddn.com/firefox.png" alt="截图"></li>
+<li>Firefox<br>火狐家没有提供如 Chrome 般那么好用的工具，需要在管理历史记录里输入你想要删除的站点，然后右键删除该站点信息即可。<br><img src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/firefox.png" alt="截图"></li>
 </ul>
 </span>
       
@@ -223,7 +225,7 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/20/mybatis的正确用法/" rel="prev">mybatis的正确用法</a>
+              <a href="/2017/01/20/mybatis的正确用法/" rel="prev">mybatis 的正确用法</a>
             
           </div>
 
@@ -254,8 +256,7 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2016/12/08/HSTS副作用/"
-                   data-title="HSTS副作用" data-url="blog.fleais.me/2016/12/08/HSTS副作用/">
+              <div class="ds-thread" data-thread-key="2016/12/08/HSTS副作用/" data-title="HSTS 副作用" data-url="blog.fleais.me/2016/12/08/HSTS副作用/">
               </div>
             
           </div>
@@ -277,7 +278,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -288,7 +289,7 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image"/>
+          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image">
           <p class="site-author-name" itemprop="name">Flea</p>
         </div>
         <p class="site-description motion-element" itemprop="description">阅读，思考，交流</p>
@@ -361,10 +362,10 @@
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
+      <div class="footer-inner"> <div class="copyright">
   
   &copy; &nbsp;  2014 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>

@@ -1,61 +1,53 @@
 <!doctype html>
 <html class="theme-next use-motion theme-next-mist">
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="阅读，思考，交流" />
-
-
-
-  <meta name="keywords" content="Hexo,next" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5">
 
 
-<meta name="description" content="在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。
-API设计上采用了目前比较流行的RESTful架构，URL上表达出接口版本号信息.
 
-/v2.0/user/login">
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1">
+
+
+    <meta name="description" content="阅读，思考，交流">
+
+
+
+  <meta name="keywords" content="Hexo,next">
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1">
+
+
+<meta name="description" content="在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。 API设计上采用了目前比较流行的RESTful架构，URL上表达出接口版本号信息.  /v2.0/user/login">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动互联网产品server端的技术栈">
 <meta property="og:url" content="blog.fleais.me/2016/02/21/移动互联网产品server端的技术栈/index.html">
-<meta property="og:site_name" content="Flea's Note">
-<meta property="og:description" content="在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。
-API设计上采用了目前比较流行的RESTful架构，URL上表达出接口版本号信息.
-
-/v2.0/user/login">
+<meta property="og:site_name" content="Flea&#39;s Note">
+<meta property="og:description" content="在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。 API设计上采用了目前比较流行的RESTful架构，URL上表达出接口版本号信息.  /v2.0/user/login">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-03-02T08:25:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动互联网产品server端的技术栈">
-<meta name="twitter:description" content="在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。
-API设计上采用了目前比较流行的RESTful架构，URL上表达出接口版本号信息.
-
-/v2.0/user/login">
+<meta name="twitter:description" content="在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。 API设计上采用了目前比较流行的RESTful架构，URL上表达出接口版本号信息.  /v2.0/user/login">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -115,7 +107,7 @@ API设计上采用了目前比较流行的RESTful架构，URL上表达出接口�
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            <i class="menu-item-icon icon-next-home"></i> <br>
             首页
           </a>
         </li>
@@ -123,7 +115,7 @@ API设计上采用了目前比较流行的RESTful架构，URL上表达出接口�
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            <i class="menu-item-icon icon-next-archives"></i> <br>
             归档
           </a>
         </li>
@@ -131,7 +123,7 @@ API设计上采用了目前比较流行的RESTful架构，URL上表达出接口�
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
+            <i class="menu-item-icon icon-next-tags"></i> <br>
             标签
           </a>
         </li>
@@ -453,10 +445,10 @@ API设计上采用了目前比较流行的RESTful架构，URL上表达出接口�
 &lt;/build&gt;&lt;/project&gt; 
 </code></pre><p>服务运行不依赖<em>jetty</em>，<em>tomcat</em>容器。易于部署，压力上来了可以很方便的水平扩展。</p>
 <p>项目层级如下：</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">src<span class="meta-keyword">/main/</span>assembly</div><div class="line">src<span class="meta-keyword">/main/</span>java</div><div class="line">src<span class="meta-keyword">/main/</span>resources</div><div class="line">src<span class="meta-keyword">/test/</span>java/</div><div class="line">src<span class="meta-keyword">/test/</span>resources</div><div class="line">src<span class="meta-keyword">/scripts/</span></div></pre></td></tr></table></figure>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">src<span class="meta-keyword">/main/</span>assembly</span><br><span class="line">src<span class="meta-keyword">/main/</span>java</span><br><span class="line">src<span class="meta-keyword">/main/</span>resources</span><br><span class="line">src<span class="meta-keyword">/test/</span>java/</span><br><span class="line">src<span class="meta-keyword">/test/</span>resources</span><br><span class="line">src<span class="meta-keyword">/scripts/</span></span><br></pre></td></tr></table></figure>
 <p>使用<em>assembly</em>这个<em>maven</em>插件自定义打包。<br>关于<em>RESTEasy Startup</em>程序我并没有把它交给<em>Spring</em>容器管理。其中的<em>service</em>,<em>dao</em>层交给了<em>Spring</em>管理，还有事务相关，不得不说<em>Spring</em>的<em>AOP</em>确实很强大。</p>
 <p>入口类：</p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line">		* Created by flea on 16/2/18.</div><div class="line">		*/</div><div class="line">public class App &#123;</div><div class="line">   private static <span class="keyword">org.apache.log4j.Logger </span>logger= <span class="keyword">org.apache.log4j.Logger.getLogger(App.class);</span></div><div class="line">   public static void main(String[] args) throws Exception &#123;</div><div class="line">       String host = <span class="string">"0.0.0.0"</span><span class="comment">;</span></div><div class="line">       int port = <span class="number">9000</span><span class="comment">;</span></div><div class="line">       if (args.length &gt; <span class="number">0</span>) &#123;</div><div class="line">           host = args[<span class="number">0</span>]<span class="comment">;</span></div><div class="line">       &#125;</div><div class="line">       if (args.length &gt; <span class="number">1</span>) &#123;</div><div class="line">           port = Integer.parseInt(args[<span class="number">1</span>])<span class="comment">;</span></div><div class="line">       &#125;</div><div class="line">       logger.info(<span class="string">"app server init 中......"</span>)<span class="comment">;</span></div><div class="line">             NettyJaxrsServer netty = new NettyJaxrsServer()<span class="comment">;</span></div><div class="line">       ResteasyDeployment deployment = new ResteasyDeployment()<span class="comment">;</span></div><div class="line">       new <span class="keyword">BaseController();</span></div><div class="line">       List&lt;String&gt; arr =new ArrayList&lt;&gt;()<span class="comment">;</span></div><div class="line">       arr.<span class="keyword">add(AuthTokenFilter.class.getName());</span></div><div class="line">       arr.<span class="keyword">add(SqlSessionCloseable.class.getName());</span></div><div class="line">       arr.<span class="keyword">add(ResourceNotFoundExceptionHandler.class.getName());</span></div><div class="line">       arr.<span class="keyword">add(ValidationExceptionMapper.class.getName());</span></div><div class="line">       deployment.setProviderClasses(arr)<span class="comment">;</span></div><div class="line">       deployment.setApplication(new MyApplication())<span class="comment">;</span></div><div class="line">       netty.setDeployment(deployment)<span class="comment">;</span></div><div class="line">       netty.setHostname(host)<span class="comment">;</span></div><div class="line">       netty.setPort(port)<span class="comment">;</span></div><div class="line">       netty.setRootResourcePath(<span class="string">"/v2.0/"</span>)<span class="comment">;</span></div><div class="line">       netty.setSecurityDomain(null)<span class="comment">;</span></div><div class="line">       ConstProperties.init()<span class="comment">;</span></div><div class="line">       logger.info(<span class="string">"app server 启动成功"</span>)<span class="comment">;</span></div><div class="line">       netty.start()<span class="comment">;&#125;&#125;</span></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">		* Created by flea on 16/2/18.</span></span><br><span class="line"><span class="comment">		*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">App</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> org.apache.log4j.Logger logger= org.apache.log4j.Logger.getLogger(App<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">       String host = <span class="string">"0.0.0.0"</span>;</span><br><span class="line">       <span class="keyword">int</span> port = <span class="number">9000</span>;</span><br><span class="line">       <span class="keyword">if</span> (args.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">           host = args[<span class="number">0</span>];</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (args.length &gt; <span class="number">1</span>) &#123;</span><br><span class="line">           port = Integer.parseInt(args[<span class="number">1</span>]);</span><br><span class="line">       &#125;</span><br><span class="line">       logger.info(<span class="string">"app server init 中......"</span>);</span><br><span class="line">             NettyJaxrsServer netty = <span class="keyword">new</span> NettyJaxrsServer();</span><br><span class="line">       ResteasyDeployment deployment = <span class="keyword">new</span> ResteasyDeployment();</span><br><span class="line">       <span class="keyword">new</span> BaseController();</span><br><span class="line">       List&lt;String&gt; arr =<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">       arr.add(AuthTokenFilter<span class="class">.<span class="keyword">class</span>.<span class="title">getName</span>())</span>;</span><br><span class="line">       arr.add(SqlSessionCloseable<span class="class">.<span class="keyword">class</span>.<span class="title">getName</span>())</span>;</span><br><span class="line">       arr.add(ResourceNotFoundExceptionHandler<span class="class">.<span class="keyword">class</span>.<span class="title">getName</span>())</span>;</span><br><span class="line">       arr.add(ValidationExceptionMapper<span class="class">.<span class="keyword">class</span>.<span class="title">getName</span>())</span>;</span><br><span class="line">       deployment.setProviderClasses(arr);</span><br><span class="line">       deployment.setApplication(<span class="keyword">new</span> MyApplication());</span><br><span class="line">       netty.setDeployment(deployment);</span><br><span class="line">       netty.setHostname(host);</span><br><span class="line">       netty.setPort(port);</span><br><span class="line">       netty.setRootResourcePath(<span class="string">"/v2.0/"</span>);</span><br><span class="line">       netty.setSecurityDomain(<span class="keyword">null</span>);</span><br><span class="line">       ConstProperties.init();</span><br><span class="line">       logger.info(<span class="string">"app server 启动成功"</span>);</span><br><span class="line">       netty.start();&#125;&#125;</span><br></pre></td></tr></table></figure>
 <p>对外交互数据格式使用<em>json</em>。自定义了404,403,状态时<em>response</em>数据。增加鉴权过滤器，验证是否登录。关于自定义相关<em>mapper</em>只需要实现<em>javax.ws.rs.ext.ExceptionMapper</em>并根据不同的<em>Exception</em>返回不同数据即可，并在程序入口出注入到<em>providerClass</em>里。参数<em>valiad</em> 在3.x的<em>RESTEasy</em>里有所不同，目前网上的配置大都是2.x版配置。现在只需要引入<em>hibernate-validator</em>,<em>RESTEasy-validator provider</em>jar包即可。只需在要使用的接口方法上加上<em>@Valid</em>，<em>@NotNull</em>注解即可。</p>
 <p> 关于<em>filter</em>的设置和以上有所不同。<em>RESTEasy</em>把它理解为一个是<em>client</em>端的<em>filter</em>，一个是<em>server</em>端的<em>filter</em>，对应的接口类为<em>ContainerRequestFilter</em>,<em>ContainerResponseFilter</em>。</p>
 <pre><code>     @Provider
@@ -480,6 +472,7 @@ public void filter(ContainerRequestContext containerRequestContext) throws IOExc
         }
     }
     return;}}
+
 </code></pre><p>然后只需在需要过滤的地方加上<em>@PreMath</em>注解即可。<em>server</em>端的过滤器不用再另加主键。以上所的所有自定义功能都要记得把它注入到<em>RESTEasy</em> <em>providerClass</em>里。 </p>
 </span>
       
@@ -523,8 +516,7 @@ public void filter(ContainerRequestContext containerRequestContext) throws IOExc
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2016/02/21/移动互联网产品server端的技术栈/"
-                   data-title="移动互联网产品server端的技术栈" data-url="blog.fleais.me/2016/02/21/移动互联网产品server端的技术栈/">
+              <div class="ds-thread" data-thread-key="2016/02/21/移动互联网产品server端的技术栈/" data-title="移动互联网产品server端的技术栈" data-url="blog.fleais.me/2016/02/21/移动互联网产品server端的技术栈/">
               </div>
             
           </div>
@@ -546,7 +538,7 @@ public void filter(ContainerRequestContext containerRequestContext) throws IOExc
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -557,7 +549,7 @@ public void filter(ContainerRequestContext containerRequestContext) throws IOExc
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image"/>
+          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image">
           <p class="site-author-name" itemprop="name">Flea</p>
         </div>
         <p class="site-description motion-element" itemprop="description">阅读，思考，交流</p>
@@ -630,10 +622,10 @@ public void filter(ContainerRequestContext containerRequestContext) throws IOExc
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
+      <div class="footer-inner"> <div class="copyright">
   
   &copy; &nbsp;  2014 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>

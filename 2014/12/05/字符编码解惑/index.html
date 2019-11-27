@@ -1,55 +1,54 @@
 <!doctype html>
 <html class="theme-next use-motion theme-next-mist">
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="阅读，思考，交流" />
-
-
-
-  <meta name="keywords" content="编码,字符," />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5">
 
 
-<meta name="description" content="经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。                                    
-1. ASCII码我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示">
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1">
+
+
+    <meta name="description" content="阅读，思考，交流">
+
+
+
+  <meta name="keywords" content="编码,字符,">
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1">
+
+
+<meta name="description" content="经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。                                     1. ASCII码我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示">
+<meta name="keywords" content="编码,字符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="字符编码解惑">
 <meta property="og:url" content="blog.fleais.me/2014/12/05/字符编码解惑/index.html">
-<meta property="og:site_name" content="Flea's Note">
-<meta property="og:description" content="经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。                                    
-1. ASCII码我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示">
+<meta property="og:site_name" content="Flea&#39;s Note">
+<meta property="og:description" content="经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。                                     1. ASCII码我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2016-03-02T08:08:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符编码解惑">
-<meta name="twitter:description" content="经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。                                    
-1. ASCII码我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示">
+<meta name="twitter:description" content="经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。                                     1. ASCII码我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -109,7 +108,7 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            <i class="menu-item-icon icon-next-home"></i> <br>
             首页
           </a>
         </li>
@@ -117,7 +116,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            <i class="menu-item-icon icon-next-archives"></i> <br>
             归档
           </a>
         </li>
@@ -125,7 +124,7 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
+            <i class="menu-item-icon icon-next-tags"></i> <br>
             标签
           </a>
         </li>
@@ -203,7 +202,7 @@
 <h3 id="6-Unicode与UTF-8之间的转换"><a href="#6-Unicode与UTF-8之间的转换" class="headerlink" title="6. Unicode与UTF-8之间的转换"></a>6. Unicode与UTF-8之间的转换</h3><p>通过上一节的例子，可以看到”严”的Unicode码是4E25，UTF-8编码是E4B8A5，两者是不一样的。它们之间的转换可以通过程序实现。<br>在Windows平台下，有一个最简单的转化方法，就是使用内置的记事本小程序Notepad.exe。打开文件后，点击”文件”菜单中的”另存为”命令，会跳出一个对话框，在最底部有一个”编码”的下拉条。里面有四个选项：ANSI，Unicode，Unicode big endian 和 UTF-8。<br>1）ANSI是默认的编码方式。对于英文文件是ASCII编码，对于简体中文文件是GB2312编码（只针对Windows简体中文版，如果是繁体中文版会采用Big5码）。<br>2）Unicode编码指的是UCS-2编码方式，即直接用两个字节存入字符的Unicode码。这个选项用的little endian格式。<br>3）Unicode big endian编码与上一个选项相对应。我在下一节会解释little endian和big endian的涵义。<br>4）UTF-8编码，也就是上一节谈到的编码方法。<br>选择完”编码方式”后，点击”保存”按钮，文件的编码方式就立刻转换好了。        </p>
 <h3 id="7-Little-endian和Big-endian"><a href="#7-Little-endian和Big-endian" class="headerlink" title="7. Little endian和Big endian"></a>7. Little endian和Big endian</h3><p>上一节已经提到，Unicode码可以采用UCS-2格式直接存储。以汉字”严”为例，Unicode码是4E25，需要用两个字节存储，一个字节是4E，另一个字节是25。存储的时候，4E在前，25在后，就是Big endian方式；25在前，4E在后，就是Little endian方式。<br>这两个古怪的名称来自英国作家斯威夫特的《格列佛游记》。在该书中，小人国里爆发了内战，战争起因是人们争论，吃鸡蛋时究竟是从大头(Big-Endian)敲开还是从小头(Little-Endian)敲开。为了这件事情，前后爆发了六次战争，一个皇帝送了命，另一个皇帝丢了王位。<br>因此，第一个字节在前，就是”大头方式”（Big endian），第二个字节在前就是”小头方式”（Little endian）。<br>那么很自然的，就会出现一个问题：计算机怎么知道某一个文件到底采用哪一种方式编码？<br>Unicode规范中定义，每一个文件的最前面分别加入一个表示编码顺序的字符，这个字符的名字叫做”零宽度非换行空格”（ZERO WIDTH NO-BREAK SPACE），用FEFF表示。这正好是两个字节，而且FF比FE大1。<br>如果一个文本文件的头两个字节是FE FF，就表示该文件采用大头方式；如果头两个字节是FF FE，就表示该文件采用小头方式。                        </p>
 <h3 id="8-实例"><a href="#8-实例" class="headerlink" title="8. 实例"></a>8. 实例</h3><p>下面，举一个实例。<br>打开”记事本”程序Notepad.exe，新建一个文本文件，内容就是一个”严”字，依次采用ANSI，Unicode，Unicode big endian 和 UTF-8编码方式保存。<br>然后，用文本编辑软件UltraEdit中的”十六进制功能”，观察该文件的内部编码方式。<br>1）ANSI：文件的编码就是两个字节”D1 CF”，这正是”严”的GB2312编码，这也暗示GB2312是采用大头方式存储的。<br>2）Unicode：编码是四个字节”FF FE 25 4E”，其中”FF FE”表明是小头方式存储，真正的编码是4E25。<br>3）Unicode big endian：编码是四个字节”FE FF 4E 25″，其中”FE FF”表明是大头方式存储。<br>4）UTF-8：编码是六个字节”EF BB BF E4 B8 A5″，前三个字节”EF BB BF”表示这是UTF-8编码，后三个”E4B8A5″就是”严”的具体编码，它的存储顺序与编码顺序是一致的。</p>
-<p>来自: <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank" rel="external">阮一峰的网络日记</a></p>
+<p>来自: <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank" rel="noopener">阮一峰的网络日记</a></p>
 </span>
       
     </div>
@@ -254,8 +253,7 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2014/12/05/字符编码解惑/"
-                   data-title="字符编码解惑" data-url="blog.fleais.me/2014/12/05/字符编码解惑/">
+              <div class="ds-thread" data-thread-key="2014/12/05/字符编码解惑/" data-title="字符编码解惑" data-url="blog.fleais.me/2014/12/05/字符编码解惑/">
               </div>
             
           </div>
@@ -277,7 +275,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -288,7 +286,7 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image"/>
+          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image">
           <p class="site-author-name" itemprop="name">Flea</p>
         </div>
         <p class="site-description motion-element" itemprop="description">阅读，思考，交流</p>
@@ -361,10 +359,10 @@
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
+      <div class="footer-inner"> <div class="copyright">
   
   &copy; &nbsp;  2014 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>

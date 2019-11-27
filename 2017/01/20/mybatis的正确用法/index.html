@@ -1,54 +1,56 @@
 <!doctype html>
 <html class="theme-next use-motion theme-next-mist">
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
-
-
-    <meta name="description" content="阅读，思考，交流" />
-
-
-
-  <meta name="keywords" content="Java,MyBatis," />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5">
 
 
-<meta name="description" content="之前一直觉得写MyBatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我。。。原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说，都是值得的。">
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1">
+
+
+    <meta name="description" content="阅读，思考，交流">
+
+
+
+  <meta name="keywords" content="Java,MyBatis,">
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1">
+
+
+<meta name="description" content="之前一直觉得写 MyBatis 的 SQL 配置文件是一种痛苦，稍微有新的业务需求就要写好多 SQL。今天发现一种新的方式拯救了我。。。原来 foreach 是支持动态 SQL 的，我们可以直接搞成类似拼接 SQL 的方式：但是这种也有弊端，由于这种写法只有在运行时才知道 SQL 语句是什么，你是不好做 SQL 优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说">
+<meta name="keywords" content="Java,MyBatis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mybatis的正确用法">
+<meta property="og:title" content="mybatis 的正确用法">
 <meta property="og:url" content="blog.fleais.me/2017/01/20/mybatis的正确用法/index.html">
-<meta property="og:site_name" content="Flea's Note">
-<meta property="og:description" content="之前一直觉得写MyBatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我。。。原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说，都是值得的。">
-<meta property="og:image" content="http://7xrki6.com1.z0.glb.clouddn.com/mybatis.png">
-<meta property="og:updated_time" content="2017-01-20T04:03:50.000Z">
+<meta property="og:site_name" content="Flea&#39;s Note">
+<meta property="og:description" content="之前一直觉得写 MyBatis 的 SQL 配置文件是一种痛苦，稍微有新的业务需求就要写好多 SQL。今天发现一种新的方式拯救了我。。。原来 foreach 是支持动态 SQL 的，我们可以直接搞成类似拼接 SQL 的方式：但是这种也有弊端，由于这种写法只有在运行时才知道 SQL 语句是什么，你是不好做 SQL 优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/mybatis.png">
+<meta property="og:updated_time" content="2019-11-27T04:35:11.677Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mybatis的正确用法">
-<meta name="twitter:description" content="之前一直觉得写MyBatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我。。。原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说，都是值得的。">
-<meta name="twitter:image" content="http://7xrki6.com1.z0.glb.clouddn.com/mybatis.png">
+<meta name="twitter:title" content="mybatis 的正确用法">
+<meta name="twitter:description" content="之前一直觉得写 MyBatis 的 SQL 配置文件是一种痛苦，稍微有新的业务需求就要写好多 SQL。今天发现一种新的方式拯救了我。。。原来 foreach 是支持动态 SQL 的，我们可以直接搞成类似拼接 SQL 的方式：但是这种也有弊端，由于这种写法只有在运行时才知道 SQL 语句是什么，你是不好做 SQL 优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说">
+<meta name="twitter:image" content="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/mybatis.png">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -58,7 +60,7 @@
   };
 </script>
 
-  <title> mybatis的正确用法 | Flea's Note </title>
+  <title> mybatis 的正确用法 | Flea's Note </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -108,7 +110,7 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            <i class="menu-item-icon icon-next-home"></i> <br>
             首页
           </a>
         </li>
@@ -116,7 +118,7 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            <i class="menu-item-icon icon-next-archives"></i> <br>
             归档
           </a>
         </li>
@@ -124,7 +126,7 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
+            <i class="menu-item-icon icon-next-tags"></i> <br>
             标签
           </a>
         </li>
@@ -157,7 +159,7 @@
           
           
             
-              mybatis的正确用法
+              mybatis 的正确用法
             
           
         </h1>
@@ -192,7 +194,7 @@
       
 
       
-        <span itemprop="articleBody"><p>之前一直觉得写MyBatis的SQL配置文件是一种痛苦，稍微有新的业务需求就要写好多SQL。今天发现一种新的方式拯救了我。。。原来foreach是支持动态SQL的，我们可以直接搞成类似拼接SQL的方式：<br><img src="http://7xrki6.com1.z0.glb.clouddn.com/mybatis.png" alt="截图"><br>但是这种也有弊端，由于这种写法只有在运行时才知道SQL语句是什么，你是不好做SQL优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说，都是值得的。</p>
+        <span itemprop="articleBody"><p>之前一直觉得写 MyBatis 的 SQL 配置文件是一种痛苦，稍微有新的业务需求就要写好多 SQL。今天发现一种新的方式拯救了我。。。原来 foreach 是支持动态 SQL 的，我们可以直接搞成类似拼接 SQL 的方式：<br><img src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/mybatis.png" alt="截图"><br>但是这种也有弊端，由于这种写法只有在运行时才知道 SQL 语句是什么，你是不好做 SQL 优化的，可自定义化太高，字段顺序和索引顺序不一样致使索引无法正常生效。不过这对于我来说，都是值得的。</p>
 </span>
       
     </div>
@@ -212,13 +214,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/19/maven打单体jar遇到的问题/" rel="prev">maven打单体jar遇到的问题</a>
+              <a href="/2017/03/19/maven打单体jar遇到的问题/" rel="prev">maven 打单体 jar 遇到的问题</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/08/HSTS副作用/" rel="next">HSTS副作用</a>
+              <a href="/2016/12/08/HSTS副作用/" rel="next">HSTS 副作用</a>
             
           </div>
         </div>
@@ -243,8 +245,7 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2017/01/20/mybatis的正确用法/"
-                   data-title="mybatis的正确用法" data-url="blog.fleais.me/2017/01/20/mybatis的正确用法/">
+              <div class="ds-thread" data-thread-key="2017/01/20/mybatis的正确用法/" data-title="mybatis 的正确用法" data-url="blog.fleais.me/2017/01/20/mybatis的正确用法/">
               </div>
             
           </div>
@@ -266,7 +267,7 @@
 
       
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -277,7 +278,7 @@
 
       <section class="site-overview">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image"/>
+          <img class="site-author-image" src="http://ww1.sinaimg.cn/bmiddle/628be132gw1euzpaswysvj20sg0izwny.jpg" alt="Flea" itemprop="image">
           <p class="site-author-name" itemprop="name">Flea</p>
         </div>
         <p class="site-description motion-element" itemprop="description">阅读，思考，交流</p>
@@ -350,10 +351,10 @@
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
+      <div class="footer-inner"> <div class="copyright">
   
   &copy; &nbsp;  2014 - 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>

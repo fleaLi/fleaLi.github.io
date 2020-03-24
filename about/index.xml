@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on harley&#39;s note</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on harley&#39;s note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2014-2020 Harley</copyright>
+    
+        <atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/about/me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/me/</guid>
+      <description>一个程序员，创过业，一直从事 GIS 相关的工作，日常使用最多的语言是 Java ，最近越来越喜欢用Golang，Python 写东西，最喜欢的数据库是 PostgreSQL 。</description>
+    </item>
+    
+  </channel>
+</rss>

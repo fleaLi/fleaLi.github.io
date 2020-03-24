@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on harley&#39;s note</title>
-    <link>/categories/</link>
+    <link>/index.html/categories/</link>
     <description>Recent content in Categories on harley&#39;s note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©2014-2020 Harley</copyright>
     
-        <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/index.html/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

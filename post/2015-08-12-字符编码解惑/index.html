@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>字符编码解惑&nbsp;&ndash;&nbsp;harley&#39;s note</title><link rel="stylesheet" href="/index.html/css/core.min.088b1340187cde2f9ddb4c476ee1baf7f26d7b227daea16929e87658a464636133df6748a9a2182b4cd9b0f0ddb96de5.css" integrity="sha384-CIsTQBh83i&#43;d20xHbuG69/JteyJ9rqFpKeh2WKRkY2Ez32dIqaIYK0zZsPDduW3l"><body>
+<meta name="supported-color-schemes" content="light dark"><title>字符编码解惑&nbsp;&ndash;&nbsp;harley&#39;s note</title><link rel="stylesheet" href="/css/core.min.088b1340187cde2f9ddb4c476ee1baf7f26d7b227daea16929e87658a464636133df6748a9a2182b4cd9b0f0ddb96de5.css" integrity="sha384-CIsTQBh83i&#43;d20xHbuG69/JteyJ9rqFpKeh2WKRkY2Ez32dIqaIYK0zZsPDduW3l"><body>
     <div class="base-body"><section id="header" class="site header">
-    <div class="header wrap"><span class="header left-side"><a class="site home" href="/index.html/"><span class="site name">harley's note</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/index.html/tags/">Tags</a><a class="nav item" href="/index.html/about/me">About</a></nav></div></span></div></section><div id="content"><section class="article header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">harley's note</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about/me">About</a></nav></div></span></div></section><div id="content"><section class="article header">
     <h1 class="article title">字符编码解惑</h1><p class="article date">2015-08-12</p></section><article class="article markdown-body"><p>经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。</p>
 <h3 id="1-ascii码">1. ASCII码</h3>
 <p>我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从0000000到11111111。
@@ -65,7 +65,7 @@ Unicode规范中定义，每一个文件的最前面分别加入一个表示编�
 3）Unicode big endian：编码是四个字节”FE FF 4E 25″，其中”FE FF”表明是大头方式存储。
 4）UTF-8：编码是六个字节”EF BB BF E4 B8 A5″，前三个字节”EF BB BF”表示这是UTF-8编码，后三个”E4B8A5″就是”严”的具体编码，它的存储顺序与编码顺序是一致的。</p>
 <p>来自: <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html"target="_blank">阮一峰的网络日记</a></p>
-</article><section class="article navigation"><p><a class="link" href="/index.html/post/2016-02-21-%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81server%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/"><span class="li">&larr;</span>移动互联网产品server端的技术栈</a></p><p><a class="link" href="/index.html/post/2015-08-12-%E6%88%91%E6%89%80%E7%90%86%E8%A7%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/"><span class="li">&rarr;</span>我所理解的技术领导力</a></p></section><section class="article discussion"><div id="disqus_thread"></div>
+</article><section class="article navigation"><p><a class="link" href="/post/2016-02-21-%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81server%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/"><span class="li">&larr;</span>移动互联网产品server端的技术栈</a></p><p><a class="link" href="/post/2015-08-12-%E6%88%91%E6%89%80%E7%90%86%E8%A7%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/"><span class="li">&rarr;</span>我所理解的技术领导力</a></p></section><section class="article discussion"><div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -89,7 +89,7 @@ Unicode规范中定义，每一个文件的最前面分别加入一个表示编�
     <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
         target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
         target="_blank">Notepadium</a></p>
-</div></section><script src="/index.html/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></div>
+</div></section><script src="/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></div>
 </body>
 
 </html>

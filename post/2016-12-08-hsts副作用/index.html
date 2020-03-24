@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>HSTS 副作用&nbsp;&ndash;&nbsp;harley&#39;s note</title><link rel="stylesheet" href="/css/core.min.088b1340187cde2f9ddb4c476ee1baf7f26d7b227daea16929e87658a464636133df6748a9a2182b4cd9b0f0ddb96de5.css" integrity="sha384-CIsTQBh83i&#43;d20xHbuG69/JteyJ9rqFpKeh2WKRkY2Ez32dIqaIYK0zZsPDduW3l"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">harley's note</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about/me">About</a></nav></div></span></div></section><div id="content"><section class="article header">
+    <h1 class="article title">HSTS 副作用</h1><p class="article date">2016-12-08</p></section><article class="article markdown-body"><p>苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过 302 跳转或者加「Strict-Transport-Security」头通知浏览器强制使用 https 访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了 HTTPS，发现用浏览器访问服务地址都自动给转为了 https 前缀。。。 万事不决问 Google，找到 Chrome，Firefox 的解决之法，我们需要清除掉 HSTS 在浏览器的本地缓存，这样就不会再自动转换为 HTTPS。</p>
+<ul>
+<li>Chrome
+Chrome 不愧是工程师的最爱，自带 Develop 功能，键入「<a href="chrome://net-internals/#hsts">chrome://net-internals/#hsts</a>」在”Delete domain”那里删掉你想要的域名即可。
+<a target="_blank" rel="noopener noreferrer" 
+  href="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/chrome.png"><img  src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/chrome.png"
+        alt="截图"/></a></li>
+</ul>
+<ul>
+<li>Firefox
+火狐家没有提供如 Chrome 般那么好用的工具，需要在管理历史记录里输入你想要删除的站点，然后右键删除该站点信息即可。
+<a target="_blank" rel="noopener noreferrer" 
+  href="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/firefox.png"><img  src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/firefox.png"
+        alt="截图"/></a></li>
+</ul>
+</article><section class="article navigation"><p><a class="link" href="/post/2017-01-20-mybatis%E7%9A%84%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95/"><span class="li">&larr;</span>mybatis 的正确用法</a></p><p><a class="link" href="/post/2016-08-02-groovy%E7%9A%84%E5%A8%81%E5%8A%9B/"><span class="li">&rarr;</span>Groovy的威力</a></p></section><section class="article discussion"><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "说点什么" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2014-2020 Harley</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></div>
+</body>
+
+</html>

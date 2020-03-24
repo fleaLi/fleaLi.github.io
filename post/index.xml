@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on harley&#39;s note</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on harley&#39;s note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2014-2020 Harley</copyright>
+    <lastBuildDate>Sun, 19 Mar 2017 22:33:00 +0000</lastBuildDate>
+    
+        <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>maven 打单体 jar 遇到的问题</title>
+      <link>/post/2017-03-19-maven%E6%89%93%E5%8D%95%E4%BD%93jar%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 19 Mar 2017 22:33:00 +0000</pubDate>
+      
+      <guid>/post/2017-03-19-maven%E6%89%93%E5%8D%95%E4%BD%93jar%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>尝试用 maven assembly plugin 把公司的 API 项目生成 fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.or</description>
+    </item>
+    
+    <item>
+      <title>mybatis 的正确用法</title>
+      <link>/post/2017-01-20-mybatis%E7%9A%84%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 20 Jan 2017 11:33:58 +0000</pubDate>
+      
+      <guid>/post/2017-01-20-mybatis%E7%9A%84%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95/</guid>
+      <description>之前一直觉得写 MyBatis 的 SQL 配置文件是一种痛苦，稍微有新的业务需求就要写好多 SQL。今天发现一种新的方式拯救了我。。。原来 foreach 是支持动态 SQL 的，我们可以</description>
+    </item>
+    
+    <item>
+      <title>HSTS 副作用</title>
+      <link>/post/2016-12-08-hsts%E5%89%AF%E4%BD%9C%E7%94%A8/</link>
+      <pubDate>Thu, 08 Dec 2016 12:03:25 +0000</pubDate>
+      
+      <guid>/post/2016-12-08-hsts%E5%89%AF%E4%BD%9C%E7%94%A8/</guid>
+      <description>苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者</description>
+    </item>
+    
+    <item>
+      <title>Groovy的威力</title>
+      <link>/post/2016-08-02-groovy%E7%9A%84%E5%A8%81%E5%8A%9B/</link>
+      <pubDate>Tue, 02 Aug 2016 14:45:27 +0000</pubDate>
+      
+      <guid>/post/2016-08-02-groovy%E7%9A%84%E5%A8%81%E5%8A%9B/</guid>
+      <description>现在的工作中由于需要经常读写文件，处理文本内容，Groovy 这个语言用的频率比较多，渐渐感觉它的强大，方便之处。由于是动态语言加上闭包优势，</description>
+    </item>
+    
+    <item>
+      <title>创新Live2使用体验</title>
+      <link>/post/2016-04-26-%E5%88%9B%E6%96%B0live2%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</link>
+      <pubDate>Tue, 26 Apr 2016 11:32:29 +0000</pubDate>
+      
+      <guid>/post/2016-04-26-%E5%88%9B%E6%96%B0live2%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</guid>
+      <description>Live2用了快一年了，耳机线出问题了，现在只有一边有声音了。。囧。网上查了下不是我一个人遇到这个问题，做工确实有问题，但音质很不错，我煲了</description>
+    </item>
+    
+    <item>
+      <title>技术人员知识体系</title>
+      <link>/post/2016-03-05-%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</link>
+      <pubDate>Sat, 05 Mar 2016 16:44:22 +0000</pubDate>
+      
+      <guid>/post/2016-03-05-%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</guid>
+      <description>偶然间发现前支付宝架构师姚建东分享的技术人员知识体系,我转成了思维导图，方便自己查看，完善自己的知识结构，图中只列出了需要掌握的东西，具体内</description>
+    </item>
+    
+    <item>
+      <title>移动互联网产品server端的技术栈</title>
+      <link>/post/2016-02-21-%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81server%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</link>
+      <pubDate>Sun, 21 Feb 2016 13:58:31 +0000</pubDate>
+      
+      <guid>/post/2016-02-21-%E7%A7%BB%E5%8A%A8%E4%BA%92%E8%81%94%E7%BD%91%E4%BA%A7%E5%93%81server%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/</guid>
+      <description>在新版产品Server端技术选型上，我选了 RESTEasy+Netty+Spring IOC+Mybatis 技术栈。目前没有看到中文blog里有比较详细的实践文章。记录下我使用时遇到的问题。 API设计上</description>
+    </item>
+    
+    <item>
+      <title>字符编码解惑</title>
+      <link>/post/2015-08-12-%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E8%A7%A3%E6%83%91/</link>
+      <pubDate>Wed, 12 Aug 2015 10:59:20 +0000</pubDate>
+      
+      <guid>/post/2015-08-12-%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E8%A7%A3%E6%83%91/</guid>
+      <description>经常和字符打交道的工程师，理清字符的不同编码形式很有必要。遇到乱码问题有地放矢，不会手足无措。 1. ASCII码 我们知道，在计算机内部，所有的信</description>
+    </item>
+    
+    <item>
+      <title>我所理解的技术领导力</title>
+      <link>/post/2015-08-12-%E6%88%91%E6%89%80%E7%90%86%E8%A7%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/</link>
+      <pubDate>Fri, 12 Dec 2014 11:05:49 +0000</pubDate>
+      
+      <guid>/post/2015-08-12-%E6%88%91%E6%89%80%E7%90%86%E8%A7%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/</guid>
+      <description>在公众号里看到一篇技术领导者有关的文章，觉得很不错。再加上自己打算在这条路上发展，特此再此mark。 一晃六年，《技术领导之路》要再版重印了。</description>
+    </item>
+    
+    <item>
+      <title>如何用互联网思维经营小餐馆</title>
+      <link>/post/2015-08-12-%E5%A6%82%E4%BD%95%E7%94%A8%E4%BA%92%E8%81%94%E7%BD%91%E6%80%9D%E7%BB%B4%E7%BB%8F%E8%90%A5%E5%B0%8F%E9%A4%90%E9%A6%86/</link>
+      <pubDate>Wed, 12 Nov 2014 10:37:47 +0000</pubDate>
+      
+      <guid>/post/2015-08-12-%E5%A6%82%E4%BD%95%E7%94%A8%E4%BA%92%E8%81%94%E7%BD%91%E6%80%9D%E7%BB%B4%E7%BB%8F%E8%90%A5%E5%B0%8F%E9%A4%90%E9%A6%86/</guid>
+      <description>公司附近新开了个红烧牛肉面馆，由于是第一天开，老板各种漏单。一片混乱，做出来后喊号码没有这个码，一合计号码乱了。搞得做出来的没人领，在那等着</description>
+    </item>
+    
+  </channel>
+</rss>

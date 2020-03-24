@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>maven 打单体 jar 遇到的问题&nbsp;&ndash;&nbsp;harley&#39;s note</title><link rel="stylesheet" href="/css/core.min.088b1340187cde2f9ddb4c476ee1baf7f26d7b227daea16929e87658a464636133df6748a9a2182b4cd9b0f0ddb96de5.css" integrity="sha384-CIsTQBh83i&#43;d20xHbuG69/JteyJ9rqFpKeh2WKRkY2Ez32dIqaIYK0zZsPDduW3l"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">harley's note</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about/me">About</a></nav></div></span></div></section><div id="content"><section class="article header">
+    <h1 class="article title">maven 打单体 jar 遇到的问题</h1><p class="article date">2017-03-19</p></section><article class="article markdown-body"><p>尝试用 maven assembly plugin 把公司的 API 项目生成 fatjar。执行的时候报“ Configuration problem: Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.org/schema/tx]”。
+<a target="_blank" rel="noopener noreferrer" 
+  href="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png"><img  src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/D9D20ECD-674E-40A8-8B39-E2E9E9E4036A.png"
+        alt="截图"/></a>
+一开始以为是 spring-tx jar 包有版本冲突。在 pom 文件里显示声明了版本，还是出现这个错误。又查了下，原来是因为把 Spring 里各模块里 META-INF 下的 scheme 文件，handler 文件覆盖了。换用 maven-shade-plugin 配置 transformer 属性即可。</p>
+<p><a target="_blank" rel="noopener noreferrer" 
+  href="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/2.png"><img  src="http://antzb-production.oss-cn-qingdao.aliyuncs.com/yunying/2.png"
+        alt="截图"/></a></p>
+</article><section class="article navigation"><p><a class="link" href="/post/2017-01-20-mybatis%E7%9A%84%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95/"><span class="li">&rarr;</span>mybatis 的正确用法</a></p></section><section class="article discussion"><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "说点什么" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2014-2020 Harley</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></div>
+</body>
+
+</html>

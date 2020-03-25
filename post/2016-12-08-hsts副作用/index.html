@@ -4,7 +4,7 @@
 <meta name="supported-color-schemes" content="light dark"><title>HSTS 副作用&nbsp;&ndash;&nbsp;harley&#39;s note</title><link rel="stylesheet" href="/css/core.min.088b1340187cde2f9ddb4c476ee1baf7f26d7b227daea16929e87658a464636133df6748a9a2182b4cd9b0f0ddb96de5.css" integrity="sha384-CIsTQBh83i&#43;d20xHbuG69/JteyJ9rqFpKeh2WKRkY2Ez32dIqaIYK0zZsPDduW3l"><body>
     <div class="base-body"><section id="header" class="site header">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">harley's note</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about/me">About</a></nav></div></span></div></section><div id="content"><section class="article header">
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about/me">About</a><a class="nav item" href="https://github.com/fleaLi"target="_blank">Github</a></nav></div></span></div></section><div id="content"><section class="article header">
     <h1 class="article title">HSTS 副作用</h1><p class="article date">2016-12-08</p></section><article class="article markdown-body"><p>苹果官方宣布 2017 年开始所有 AppStore 上架的 APP 都要启用 SSL/TLS 协议，于是把我们的 API 服务改为 HTTPS，问题来了，用户在输入域名的时候一般不会输「http」或者「https」，需要域名拥有者通过 302 跳转或者加「Strict-Transport-Security」头通知浏览器强制使用 https 访问，基于安全性考虑，我们用了加请求头的方式，后来由于开发调试需要，禁掉了 HTTPS，发现用浏览器访问服务地址都自动给转为了 https 前缀。。。 万事不决问 Google，找到 Chrome，Firefox 的解决之法，我们需要清除掉 HSTS 在浏览器的本地缓存，这样就不会再自动转换为 HTTPS。</p>
 <ul>
 <li>Chrome

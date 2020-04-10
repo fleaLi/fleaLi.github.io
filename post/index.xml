@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©2014-2020 Harley</copyright>
-    <lastBuildDate>Sun, 19 Mar 2017 22:33:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 16:29:52 +0800</lastBuildDate>
     
         <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>聊聊Ribbon</title>
+      <link>/post/%E8%81%8A%E8%81%8Aribbon/</link>
+      <pubDate>Fri, 10 Apr 2020 16:29:52 +0800</pubDate>
+      
+      <guid>/post/%E8%81%8A%E8%81%8Aribbon/</guid>
+      <description>Ribbon 是什么 Ribbon 是一个进程内实现负载均衡算法的客户端组件。它提供了以下特性 多种负载均衡策略/可插拔式负载均衡制定 可集成服务发现（Eureka） 支持</description>
+    </item>
     
     <item>
       <title>maven 打单体 jar 遇到的问题</title>

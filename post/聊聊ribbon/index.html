@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162913077-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162913077-1');
+</script><title>聊聊Ribbon&nbsp;&ndash;&nbsp;harley&#39;s note</title><link rel="stylesheet" href="/css/core.min.088b1340187cde2f9ddb4c476ee1baf7f26d7b227daea16929e87658a464636133df6748a9a2182b4cd9b0f0ddb96de5.css" integrity="sha384-CIsTQBh83i&#43;d20xHbuG69/JteyJ9rqFpKeh2WKRkY2Ez32dIqaIYK0zZsPDduW3l"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">harley's note</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about/me">About</a><a class="nav item" href="https://github.com/fleaLi"target="_blank">Github</a></nav></div></span></div></section><div id="content"><section class="article header">
+    <h1 class="article title">聊聊Ribbon</h1><p class="article date">2020-04-10</p></section><article class="article markdown-body"><h2 id="ribbon-是什么">Ribbon 是什么</h2>
+<p>Ribbon 是一个进程内实现负载均衡算法的客户端组件。它提供了以下特性</p>
+<ul>
+<li>多种负载均衡策略/可插拔式负载均衡制定</li>
+<li>可集成服务发现（Eureka）</li>
+<li>支持云原生</li>
+<li>Built-in failure resiliency (容错)</li>
+<li>缓存和批处理
+##内置负载均衡
+负载均衡包含3大组件，Rule，Ping，ServerList 。
+Rule 组件根据什么策略决定返回哪台机器。 Ping 后台运行确保哪些机器存活。 ServerList 服务列表，它可以是静态配置的也可以是动态的。</li>
+</ul>
+<h3 id="轮询选择roundrobinrule默认">轮询选择(RoundRobinRule)(默认)</h3>
+<p>轮询策略每次都顺序取一个服务返回，比如有5个 provider，第一次返回第1个，第二次返回第2个，&hellip;以此类推。</p>
+<h3 id="权重轮询weightedresponsetimerule">权重轮询(WeightedResponseTimeRule)</h3>
+<p>此策略根据服务的响应时间设置权重，响应越长，权重越低。怎么获取权重的呢？一开始使用轮询策略，同时开启一个计时器，每30秒收集一次各个服务的平均响应时间，当信息足够时，给每个服务加上权重，根据权重随机选择返回。</p>
+<h3 id="可用性过滤选择availabilityfilteringrule">可用性过滤选择(AvailabilityFilteringRule)</h3>
+<p>这个策略会跳过哪些认为是服务熔断的或者并发连接数高的机器。一般一个实例如果连续三次连接都返回失败它会标记此种状态并保持30秒，如果下一个还是失败则会变成暂时不可用的状态</p>
+<h3 id="随机选择-randomrule">随机选择 (RandomRule)</h3>
+<p>从服务列表随机选择一个返回</p>
+<h3 id="最少并发数策略bestavailablerule">最少并发数策略(BestAvailableRule)</h3>
+<p>选择目前请求数最小的服务，除非这个服务在熔断中。</p>
+<h3 id="重试策略retryrule">重试策略(RetryRule)</h3>
+<p>这个策略跟其他策略组合使用，比如跟轮询策略组合，在设定的时间端内选择不成功就用轮询策略直到找到一个可用的返回</p>
+<h2 id="自定义负载均衡">自定义负载均衡</h2>
+<p>自定义负责均衡策略实现 AbstractLoadBalanceRule 类即可。</p>
+</article><section class="article navigation"><p><a class="link" href="/post/2017-03-19-maven%E6%89%93%E5%8D%95%E4%BD%93jar%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"><span class="li">&rarr;</span>maven 打单体 jar 遇到的问题</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">©2014-2020 Harley</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/hljs.min.0799348a91dce12c6be4a73f943cfe78f181f4e6f6ec35c4af0fca1de377879f77cfab03c30f03a174d675737b5a9314.js" integrity="sha384-B5k0ipHc4Sxr5Kc/lDz&#43;ePGB9Ob27DXErw/KHeN3h593z6sDww8DoXTWdXN7WpMU"></script><script>hljs.initHighlightingOnLoad();</script></div>
+</body>
+
+</html>

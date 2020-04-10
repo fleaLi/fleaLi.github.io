@@ -21,11 +21,11 @@
 <li>可集成服务发现（Eureka）</li>
 <li>支持云原生</li>
 <li>Built-in failure resiliency (容错)</li>
-<li>缓存和批处理
-##内置负载均衡
-负载均衡包含3大组件，Rule，Ping，ServerList 。
-Rule 组件根据什么策略决定返回哪台机器。 Ping 后台运行确保哪些机器存活。 ServerList 服务列表，它可以是静态配置的也可以是动态的。</li>
+<li>缓存和批处理</li>
 </ul>
+<h2 id="内置负载均衡">内置负载均衡</h2>
+<p>负载均衡包含3大组件，Rule，Ping，ServerList 。
+Rule 组件根据什么策略决定返回哪台机器。 Ping 后台运行确保哪些机器存活。 ServerList 服务列表，它可以是静态配置的也可以是动态的。</p>
 <h3 id="轮询选择roundrobinrule默认">轮询选择(RoundRobinRule)(默认)</h3>
 <p>轮询策略每次都顺序取一个服务返回，比如有5个 provider，第一次返回第1个，第二次返回第2个，&hellip;以此类推。</p>
 <h3 id="权重轮询weightedresponsetimerule">权重轮询(WeightedResponseTimeRule)</h3>
